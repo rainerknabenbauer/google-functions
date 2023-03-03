@@ -1,7 +1,7 @@
 const functions = require('@google-cloud/functions-framework');
 const mongoose = require('mongoose');
 
-functions.http('helloHttp', (req, res) => {
+functions.http('run', (req, res) => {
     setHttpHeaders(req, res)
     execute(res, req)
 });
